@@ -1,0 +1,140 @@
+#lessons in Program in Python
+
+#Introduction to Programming
+def introduction_programming():
+    print("Introduction to Programming")
+    print("\nProgramming is the process of creating a set of instructions that tell a computer how to perform a task.")
+    print("Programs can be written in various programming languages such as Python, Java, C++, etc.")
+    print("In Python, programming is easy to start with and has many applications like data analysis, web development, automation, and more.\n")
+
+#Introduction to Python
+def introduction():
+    print("Introduction to Python")
+    print("\nPython is a high-level programming language that is simple and easy to learn.")
+    print("It is used for a wide range of applications, from web development to data science.")
+    print("Python supports various programming paradigms, including procedural, object-oriented, and functional programming.\n")
+
+#Basic Syntax
+def basic_syntax():
+    print("Basic Syntax in Python")
+    print("\nPython is known for its clean and easy-to-read syntax.")
+    print("In Python, we use indentation to define code blocks instead of braces like other programming languages.")
+    print("Example:")
+    print("name = 'Anthony Saldivar Datang'  # This is a variable with string data\n")
+    print("print(name)  # This will print 'Anthony Saldivar Datang'")
+
+#Basic Arithmetic
+def basic_arithmetic():
+    print("Basic Arithmetic Operations")
+    a = 10
+    b = 3
+
+    sum_result = a + b  # Addition
+    difference = a - b  # Subtraction
+    product = a * b     # Multiplication
+    quotient = a / b    # Division
+    modulos = a % b     # Modulus
+
+    print("\nPerforming Basic Arithmetic with a = 10 and b = 3:")
+    print(f"Sum: {sum_result}")
+    print(f"Difference: {difference}")
+    print(f"Product: {product}")
+    print(f"Quotient: {quotient}")
+    print(f"Modulos: {modulos}\n")
+
+#Relational Operators
+def relational_operators():
+    print("Relational Operators")
+    x = 10
+    y = 20
+
+    print("\nChecking Relational Conditions with x = 10 and y = 20:")
+    print(f"x == y: {x == y}")  #Output: False
+    print(f"x != y: {x != y}")  #Output: True
+    print(f"x > y: {x > y}")    #Output: False
+    print(f"x < y: {x < y}")    #Output: True
+    print(f"x >= y: {x >= y}")  #Output: False
+    print(f"x <= y: {x <= y}")  #Output: True\n")
+
+#Logical Operators
+def logical_operators():
+    print("Logical Operators")
+    x = 10
+    y = 20
+    z = 5
+
+    print("\nChecking Logical Conditions with x = 10, y = 20, and z = 5:")
+    print(f"x < y and z > x: {x < y and z > x}")  #Output: True
+    print(f"x > y or z < x: {x > y or z < x}")    #Output: True
+    print(f"x == 10 and not(x == y): {x == 10 and not(x == y)}")  #Output: True
+    print(f"not(x == 10): {not(x == 10)}\n")  #Output: False
+
+#Loops: For Loop
+def for_loop():
+    print("For Loop Example")
+    print("\nUsing a For Loop to print numbers from 1 to 5:")
+    for i in range(1, 6):
+        print(i)
+    print("\nUsing a For Loop to print even numbers from 1 to 10:")
+    for i in range(1, 11):
+        if i % 2 == 0:
+            print(i)
+
+#Loops: While Loop
+def while_loop():
+    print("While Loop Example")
+    print("\nUsing a While Loop to print numbers from 1 to 5:")
+    count = 1
+    while count <= 5:
+        print(count)
+        count += 1  # Increment count by 1
+
+    print("\nUsing a While Loop to print even numbers from 1 to 10:")
+    count = 1
+    while count <= 10:
+        if count % 2 == 0:
+            print(count)
+        count += 1
+
+#Display the main menu
+def main_menu():
+    while True:
+        print("\nMain Menu For Lesson:")
+        print("1. Introduction to Programming")
+        print("2. Introduction to Python")
+        print("3. Basic Syntax")
+        print("4. Basic Arithmetic")
+        print("5. Relational Operators")
+        print("6. Logical Operators")
+        print("7. For Loop Example")
+        print("8. While Loop Example")
+        print("9. Exit")
+
+        choice = input("Please choose an option (1-9): ")
+
+        if choice == '1':
+            introduction_programming()
+        elif choice == '2':
+            introduction()
+        elif choice == '3':
+            basic_syntax()
+        elif choice == '4':
+            basic_arithmetic()
+        elif choice == '5':
+            relational_operators()
+        elif choice == '6':
+            logical_operators()
+        elif choice == '7':
+            for_loop()
+        elif choice == '8':
+            while_loop()
+        elif choice == '9':
+            print("\nThank you for learning the basics of Python programming!")
+            print("NAME OF STUDENT: Anthony S. Datang")
+            print("SECTION: ACT-1B")
+            break  # Exit the loop
+        else:
+            print("Invalid choice. Please choose a valid option (1-9).")
+
+#CLICK RUN TO RUN THE MENU AND CHOOSE NUMBER 1/9
+main_menu()
